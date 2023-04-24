@@ -1,0 +1,10 @@
+services:
+  restaurantdb:
+    image: mongo:5.0.0
+    container_name: restaurante-database
+    ports:
+      - 27018:27017
+    volumes:
+      - ./mongo:/data/db
+    
+
